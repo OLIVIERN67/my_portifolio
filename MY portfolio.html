@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Olivier Ndihokubwayo | Founder of OlivTech Innovation Ltd</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fa;--surface:#fff;--ink:#14202e;--muted:#566476;--line:#d9e0e8;--accent:#1d5fd6;--term:#0f1b2b;--termink:#d6e2f2;--ok:#3fb68b;--grad:linear-gradient(120deg,#2563eb 0%,#0ea5a4 55%,#10b981 100%);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1522;--surface:#111f31;--ink:#e6edf6;--muted:#93a3b8;--line:#223650;--accent:#5b9bff;--term:#08111c;--termink:#d6e2f2;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1522;--surface:#111f31;--ink:#e6edf6;--muted:#93a3b8;--line:#223650;--accent:#5b9bff;--term:#08111c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{position:relative;margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 'IBM Plex Sans',system-ui,sans-serif}
+a{color:var(--accent)}
+body::before{content:"";position:absolute;inset:0 0 auto 0;height:560px;z-index:-1;pointer-events:none;background:radial-gradient(55% 80% at 85% 0%,rgba(16,185,129,.20),transparent 70%),radial-gradient(50% 70% at 8% 0%,rgba(37,99,235,.20),transparent 70%)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:16px}
+.logo{display:flex;align-items:center;background:#fff;border-radius:10px;padding:4px 10px;border:1px solid var(--line)}.logo img{height:68px;width:auto;display:block}
+nav{display:flex;gap:20px;font-size:14px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--accent)}
+section{padding:72px 0 0}
+h2{font-size:26px;font-weight:600;margin:0 0 8px;letter-spacing:-.01em}
+h2::after{content:"";display:block;width:48px;height:3px;border-radius:2px;background:var(--grad);margin-top:8px}
+.lead{color:var(--muted);margin:0 0 32px;max-width:62ch}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;margin-top:32px;padding:48px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(135deg,rgba(37,99,235,.16),rgba(16,185,129,.16)),linear-gradient(rgba(110,140,180,.13) 1px,transparent 1px) 0 0/32px 32px,linear-gradient(90deg,rgba(110,140,180,.13) 1px,transparent 1px) 0 0/32px 32px,var(--surface)}
+h1{font-size:clamp(34px,5vw,52px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em;font-weight:600;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.hero p{color:var(--muted);max-width:50ch;margin:0 0 24px}
+.hero p.role{color:var(--ink);font-weight:600;font-size:17px;margin:0 0 12px;padding-left:12px;border-left:3px solid #10b981}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:500;text-decoration:none;border:1px solid var(--accent)}
+.btn.p{background:var(--grad);border-color:transparent;color:#fff}
+.btn.s{color:var(--accent)}
+.btn.p:hover{filter:brightness(1.1)}
+.term{background:var(--term);color:var(--termink);border-radius:10px;border:1px solid var(--line);font:400 13.5px/1.7 'IBM Plex Mono',monospace;overflow:hidden}
+.bar{display:flex;gap:7px;padding:11px 14px;border-bottom:1px solid #1e3049}
+.bar i{width:11px;height:11px;border-radius:50%;background:#34506f}
+.term pre{margin:0;padding:18px;white-space:pre-wrap;word-break:break-word;min-height:300px}
+.k{color:#7fb2ff}.s{color:#8fe0b9}.c{color:#6c819b}
+.cur{display:inline-block;width:8px;height:15px;background:var(--termink);vertical-align:-2px;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.skill{position:relative;border-top:3px solid transparent;background:var(--surface);padding:18px 18px 20px;border-radius:0 0 8px 8px;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.skill h3{margin:0 0 10px;font-size:16px}
+.skill::before{content:"";position:absolute;left:-1px;right:-1px;top:-3px;height:3px;background:var(--grad)}
+.tags li:hover{border-color:#10b981;color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin:0;padding:0;list-style:none}
+.tags li{font:400 12.5px 'IBM Plex Mono',monospace;padding:3px 9px;border:1px solid var(--line);border-radius:4px;color:var(--muted)}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.proj a{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;transition:border-color .15s}
+.proj a:hover{border-color:#10b981;box-shadow:0 8px 24px -12px rgba(16,185,129,.55)}
+.proj h3{margin:0 0 4px;font-size:17px}
+.proj .u{font:400 12.5px 'IBM Plex Mono',monospace;color:var(--accent);word-break:break-all}
+.proj p{margin:10px 0 0;color:var(--muted);font-size:14.5px}
+.path{border-left:2px solid var(--line);margin:0;padding:0 0 0 24px;list-style:none}
+.path li{position:relative;padding-bottom:22px}
+.path li::before{content:"";position:absolute;left:-30px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.path li.now::before{background:#10b981;border-color:#10b981;box-shadow:0 0 0 4px rgba(16,185,129,.22)}
+.path b{display:block}.path span{color:var(--muted);font-size:15px}
+.contact{background:linear-gradient(var(--surface),var(--surface)) padding-box,var(--grad) border-box;border:2px solid transparent;border-radius:10px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.contact h2{margin:0 0 4px}.contact p{margin:0;color:var(--muted)}
+footer{padding:48px 0 40px;color:var(--muted);font-size:14px}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding:24px;margin-top:20px}nav{gap:14px}section{padding-top:56px}}
+@media (prefers-reduced-motion:reduce){.cur{animation:none}html{scroll-behavior:auto}}
+/* Refined layout and responsive polish */
+:root{--bg:#f4f7fb;--surface:#fff;--ink:#172536;--muted:#5e6c7d;--line:#dce4ed;--accent:#245bd6;--grad:linear-gradient(120deg,#315ee8 0%,#138b9b 58%,#0e9f72 100%)}
+html{scroll-padding-top:100px}
+body{line-height:1.7;letter-spacing:.005em}
+body::before{position:fixed;height:620px;opacity:.8}
+.wrap{max-width:1160px;padding-inline:clamp(20px,4vw,44px)}
+header.nav{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+header.nav .wrap{height:82px;gap:28px}
+.logo{padding:4px 9px;border-radius:12px;box-shadow:0 4px 16px rgba(24,44,74,.06)}
+.logo img{height:58px;max-width:180px;object-fit:contain}
+nav{gap:clamp(16px,2.5vw,30px);align-items:center;font-size:14px;font-weight:500}
+nav a{padding:8px 0;transition:color .18s ease}
+nav a:hover{color:var(--accent)}
+main.wrap{padding-bottom:8px}
+.hero{grid-template-columns:minmax(0,1.12fr) minmax(360px,.88fr);gap:clamp(32px,5vw,64px);min-height:430px;margin-top:34px;padding:clamp(32px,5.2vw,64px);border-radius:22px;box-shadow:0 24px 70px -48px rgba(25,51,90,.35);background:radial-gradient(ellipse at 90% 10%,rgba(16,185,129,.13),transparent 42%),radial-gradient(ellipse at 10% 10%,rgba(37,99,235,.13),transparent 44%),linear-gradient(rgba(110,140,180,.08) 1px,transparent 1px) 0 0/36px 36px,linear-gradient(90deg,rgba(110,140,180,.08) 1px,transparent 1px) 0 0/36px 36px,var(--surface)}
+h1{font-size:clamp(38px,5.2vw,60px);line-height:1.06;letter-spacing:-.045em;margin-bottom:20px;max-width:12ch}
+.hero p{max-width:58ch;margin-bottom:26px;font-size:16px}
+.hero p.role{font-size:16px;margin-bottom:16px;padding-left:14px}
+.btns{gap:12px;align-items:center}
+.btn{padding:11px 19px;border-radius:9px;font-size:14px;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{box-shadow:0 8px 20px -12px rgba(37,99,235,.8)}
+.btn.s{background:var(--surface)}
+.term{border-radius:14px;box-shadow:0 18px 48px -28px rgba(4,15,30,.7)}
+.bar{padding:13px 16px}
+.term pre{min-height:294px;padding:20px;font-size:13px;line-height:1.8}
+section{padding-top:88px;scroll-margin-top:96px}
+h2{font-size:clamp(25px,3vw,30px);letter-spacing:-.025em;margin-bottom:10px}
+h2::after{width:42px;height:3px;margin-top:10px}
+.lead{margin-bottom:28px;max-width:66ch}
+.grid,.proj{gap:18px}
+.skill{height:100%;padding:21px 20px 22px;border-radius:10px;border:1px solid var(--line);border-top:0;box-shadow:0 8px 22px -20px rgba(20,42,74,.35);transition:transform .18s ease,box-shadow .18s ease}
+.skill::before{left:-1px;right:-1px;top:-1px;height:3px;border-radius:10px 10px 0 0}
+.skill:hover{transform:translateY(-3px);box-shadow:0 16px 30px -24px rgba(20,42,74,.45)}
+.skill h3{font-size:16px;margin-bottom:13px}
+.tags{gap:8px}
+.tags li{padding:4px 9px;border-radius:6px;font-size:12px;line-height:1.5}
+.proj a{position:relative;min-height:160px;padding:22px 24px 24px;border-radius:11px;box-shadow:0 8px 22px -20px rgba(20,42,74,.35);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.proj a:hover{transform:translateY(-3px);box-shadow:0 18px 32px -22px rgba(16,185,129,.45)}
+.proj h3{font-size:17px;letter-spacing:-.01em;margin-bottom:6px}
+.proj .u{font-size:12px;overflow-wrap:anywhere}
+.proj p{font-size:14px;line-height:1.65}
+.path{max-width:820px;padding-left:27px}
+.path li{padding-bottom:25px}
+.path li::before{left:-33px}
+.path b{font-size:16px;margin-bottom:3px}
+.path span{display:block;font-size:14.5px;line-height:1.7}
+.contact{padding:clamp(24px,4vw,38px);border-radius:14px;box-shadow:0 18px 44px -38px rgba(25,51,90,.48)}
+.contact h2{margin-bottom:7px}
+.contact p{max-width:60ch;font-size:15px}
+footer{margin-top:82px;padding:25px 0 30px;border-top:1px solid var(--line);font-size:13px}
+@media(max-width:820px){
+  header.nav .wrap{height:auto;min-height:76px;padding-top:8px;padding-bottom:8px}
+  .hero{grid-template-columns:1fr;min-height:0;gap:28px}
+  .hero>div:first-child{max-width:720px}
+  .term pre{min-height:0}
+  section{padding-top:68px}
+}
+@media(max-width:600px){
+  header.nav .wrap{flex-wrap:wrap;justify-content:center;gap:3px 16px;padding-top:8px;padding-bottom:10px}
+  .logo img{height:46px}
+  nav{width:100%;justify-content:center;gap:clamp(12px,4vw,22px);font-size:12px}
+  nav a{padding:5px 0}
+  .hero{margin-top:22px;padding:25px 21px;border-radius:16px;gap:24px}
+  h1{font-size:clamp(36px,10vw,48px);max-width:11ch}
+  .hero p{font-size:15px}
+  .term pre{padding:16px;font-size:11.5px;overflow-wrap:anywhere}
+  section{padding-top:58px}
+  .grid,.proj{grid-template-columns:1fr;gap:13px}
+  .proj a{min-height:0;padding:20px}
+  .contact{align-items:flex-start;gap:20px}
+  footer{margin-top:58px}
+}
+@media(prefers-reduced-motion:reduce){.btn,.skill,.proj a{transition:none}.btn:hover,.skill:hover,.proj a:hover{transform:none}}
+nav .site-controls{display:inline-flex;align-items:center;gap:8px;margin-left:clamp(4px,1.5vw,18px)}
+.site-controls select,.site-controls button{min-height:36px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:500 12px/1.2 'IBM Plex Sans',system-ui,sans-serif}
+.site-controls select{cursor:pointer}.site-controls button{cursor:pointer;white-space:nowrap;transition:border-color .18s ease,background .18s ease}
+.site-controls button:hover,.site-controls select:hover{border-color:var(--accent)}
+.site-controls select:focus-visible,.site-controls button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+:root[data-theme="dark"] .hero{background:radial-gradient(ellipse at 90% 10%,rgba(16,185,129,.11),transparent 42%),radial-gradient(ellipse at 10% 10%,rgba(37,99,235,.16),transparent 44%),linear-gradient(rgba(110,140,180,.055) 1px,transparent 1px) 0 0/36px 36px,linear-gradient(90deg,rgba(110,140,180,.055) 1px,transparent 1px) 0 0/36px 36px,var(--surface)}
+:root[data-theme="dark"] .logo{background:var(--surface)}
+:root[data-theme="dark"] .btn.s{background:var(--surface)}
+:root[data-theme="dark"] .skill,:root[data-theme="dark"] .proj a{box-shadow:0 10px 24px -20px rgba(0,0,0,.8)}
+@media(max-width:820px){nav .site-controls{margin-left:0}}
+@media(max-width:600px){nav .site-controls{width:100%;justify-content:center;margin-top:4px}.site-controls select,.site-controls button{min-height:34px}}
+.contact-copy{flex:1 1 380px}
+.contact-details{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:15px;color:var(--muted);font-size:14px;font-weight:500}
+.contact-details a{color:var(--accent);text-decoration:none;overflow-wrap:anywhere}
+.contact-details a:hover{text-decoration:underline}
+.contact .btns{gap:10px}
+.btn.wa{display:inline-flex;align-items:center;gap:8px;background:#25d366;border-color:#25d366;color:#fff}
+.btn.wa:hover{background:#20bd5a;border-color:#20bd5a;filter:none}
+.btn.wa svg{width:18px;height:18px;flex:none}
+@media(max-width:600px){.contact-details{font-size:12.5px;gap:5px 8px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a class="logo" href="#top" aria-label="OlivTech Innovation Ltd, home"><img src="data:image/webp;base64,UklGRv4cAABXRUJQVlA4IPIcAAAQcgCdASoKAfAAPmEsk0YkIqGhJxN7KIAMCWZu4W/Q4hL/5XriL+dj/H/8sPmGrf9Y+8v9m/bP49dp3R/mz+V/n/+1/sX+T/a/5nf7T/l/2/3dfeF7gH6e/7D+39bP90fUH+1X7He8J/n/2Y9z/9m/1X5AfIB/UP9D//+wn9Aj+ff8v0y/3I/9fyj/1n/g/t37Tv//9gD/3eoBwuX997lf7l+S/Q7e1Wci+4v338zP7d8/u1fvGfAF+MfzT/C/lxwqgAPrN/s/yt96z67/aeg/2Y/2H5JfQB/Mf67/hPy1/f/7B78r75/sfYC/mf9c/1X9+/K75J/97/Y/mZ7YvqH/x/6X91PoI/l39T/3v+C/fH/H/OZ67P28///uY/sN//2cTicSTpOfsgM5F4mg01kslkslkslIrAf8NFBHozD9d+y//nNjbYpvnjKZTKFo88d5li48ck1jlE1MU2JSLImT4HPhkEgkESinHKuHdd0DpdlQqKUOzO4Vd01x7/2AJbW+rSGcJtHE4nEgZGemXEkfeO/mg7NQOAe+w5CmvW3iHeoyi6MhMLHQosIy7kKLwdNOJJGhbZHT3z3y5EXHOwfK6rIMfQvqxvIR0H2FefAnNrNYZD8Q2hTzCD039OE5J3eyu2voQqrPAv3/tn7KEgWJSm8oEZKzQztCMw/YDc15lajMAaXXxxJSiT/AK+dROibF9sQLu6P0YxTFOSKj4iAopLW3bI9lktmGMi1BwlLykROJxOJBKpmEm+rvhss8zckROWBW/U7vyw199i9BqiH0M8TAcd8RL1b5BIJBIIsOtyjr6mV0+WGAfDGH7ARGYFFHP/4b64rGnE4nE4y6AZb1Xt77QHlvjfE/gd4TfPGT5v9/7qrWk/b38YXHCzJauqIsDjsqi3fzrv0Qv+zyWg4zNyTQ9jcjJP5bQ8gkBQb7ydj0pfLbwRh9kNP+bo6myWTZ0Yiauktn8NVb9o1mfxWI3UIErZGykmaCx7N8DeTy+VuGZ/iWNeJAP0AGM9hlD/olUm9p89h0WYDxkqE4p5h5lQduEO2N/3vsdW4bLMGr3wosEFlw5IG4oigq1sM5khaBEVf7UGk3FJN3giAuv0mhBTfj1pchheS7cyp4+qhDX9OZXTCIL9DHAMGc6G4Af3Y0/rAM1R+9BcTwX1Gerq5hrO9IvqoHbNLOrJzd8xAXbPgGJRVrbhuiOsGO+83fhoxuWgEcywLKxrQA/v+dWCRDjZi33Xr7M/6jq0UFxGi/UGPvRYI7/dEtImcoQ0zacxkO4Z+Ud/1SfLxdy9bMkKyRB3xznhd3aQbmcQbP/HS/kttu+0G/qbhLAza6/oV4/bmZ4HMYGKHmb/ixtDYryu3W2LM3wnBlqdsjzuid7ow6KItAiMuJ3/Dbev8RNxkDCY+3saURMeInCCayi+HzdIAAZ+K4EfPANHa4HHtkSSNercT51TlgRlEwzcM6BynKOMP7fm5ayEzYjhJfqQJ/WoRXGEh5jRGvCOins84oQGTk8Wtvb7dw6p5Zwlj02RqoUxhT+9qALRktJ9J21oYaZ7PsRHBws93eO8OKeaTdmr/8BmKLvPTn+rhzyb0I0T/bN7xm/pEwBlPS6ua+4PoyRdYeg4CMnQAWCfkFHLpHSthir8wzyPlkXfepuwH5cS41Ogn6erNetBD7sFEhFuaIK9NEa0F9L4od5ihhhh+gBdFZ2BIVz+rSztK3oxRIc8+UQSYIpOHmGYvAxsS140mnrWcDB/Px7kgu/6PYTo78ZS1+eeYfkFvank51Sy1AZHYI2QtRXQGwRAzvjTvKTmCYlBig1znz+SwFhX8YnbGR6M1oK6SevZKMmYlyol+BjNS7YmL90OScIflSfWSAY9JrvfnMNCsKiVj1Uxo9goQiwm/zfvdJpJrSnUEOqlZj2CsLv4EMJjZ/TXMMLHbS6nwfOM+muXsstUPf+u8l6vVKlzuwaPaMSbPknzVLfIT9c/pheyb4ug+4PGpOfOsGqcPpFZAAofOwGEsRefGO+3ITQzZAlIWexKY9E+MFysO6H3aXTftvvNsS3kDyvxy/+nW44NnXlRHJJWXLnQQYAtgO4S9E0X+4thiZssPEBw+FC9lsCC0+ULaCTku2KhApUbmlk57drkfzkZ7ynmPUBqysUpiYJe8q2wLvomgfQ1MyR1XgNWaQfsAfM4Dqb5OimeXTbqWAkTlsLzn11j1YDpPvEFH7GwS+WFPfW6avvKvOgs2uhgcgh/I5q9Mg1GXmSw4hdfE2HHoGYAoj6Ykc0FuCoKMmKA6fsJIerA0rup2cAlq8WvoWopOwVUR3n6rRvW3Tmz9tLxp5bmVH5V2qcBtTU5Vjo022zy6y3I0Uey/MXaek2mj/ySmM3x5MKdWGQ/wROFTd8uLol3v5BxKa98H3pEZ1if/bk+NUtnFD/E+LDzU59a11eY0hPiT2GB/Rs9EFHGvMyieNA17IKgdNb5fActkekZjo6a44W+O/htKY3KurGdi6TqKfEmLeXSbuvvixvxR6cr10gojW4z6PwtY7/iATdAn+oMafRvyI7hEmMTwQ/ua9nGl0Rbixhx/Xzu6lmcKxL5j/xcWMbCEug63yoLxjuCLVeOYtuTe+Uv172tucJVi+2yt+miBHo15nGSzT3yM7+8D6uxZla8wGki+AFUszmPM/T6DarojYuaPzM12L2T2Vmnsvwl/Gy47QTJ84kMqaW0HMIqkj8Rv0co5FUNcFddUcGqdpkEtiYGf/JKAJvqe0P+VbTWyFhikv/9qyJrw1eZH1PreS9qiH4l92P5FbPUmEaUmA0T5uvzoddya+eJHft03A8vnw0D0iDf6j/bxq6eMrYUD6UPYONA3s2j0OhegeB84T0e4tZlw2JCGMJS8uR0XXKhX9cMyvGpaGkok3/YQExsqWAxqP6Xy4LbVI9UyGRXxn9MjXgifr5HaKvkzAFHcmMe7h6R38HreXEN8knVk+u08KTsHi2A0L9zg4Vm8opEJUBn8ZkdcNvUBx8mOf/orboKB2ECxYqBMw1Pqjeo6w9L4+aStrfBa8BuaEBPnZ0IC4Nt6DgpGc1Su0HDncb5BrAz2u/BMEwRTB+/FcR+oVVeVX4r9gj/03rC7Hb7liKsn+xRLdw+DwqFaFcbER8sxg84GRyr6jj4rNnHKHOQ1QpgXfoZ6Z55AaSf3IQzbmRC05mChGJPmnMmwvxKkMdhA1lIPFHPj2PDLQDw2taS23knr4HEt61Eu9xnG+VP3C/uq7N5+FeIPzw9ym9lYni1hU8BSQaNeZZe8KP014F0rvW/pqQ8k4Zl3WC+xBlGXL7CJFd2lHjZAq6ZWfKUeu5PvAM7F6u1PJdEAMfqncxJ5B/Nhen4oPJd8IWmkXnVU7Wl5CKWK3vSDN5ec/vVlNJjFcAPtSIRlQtz6IcUaJ4ln7MIJol7fVR1JxDv6GpHwRskqlJoVxj+qpUCURVGirFtzLxAo1U87vBrX1JGmChaTTNl1QuaI+m9aGLlxhKk/9fFGLZMun5Ts37h4CKgUsXR4B9MPN/lKhTcmybJg6btIhywU6g4UbCCaDDQCh5oRrDxzYIqWtSvBqhytjiUQsH0ly9LDKclzvmMgsVdzgFZkAq4UCRiRyJmkxfIhVVw5L8TJnTujkFeLqsjzKkpZls/X6kzPM3Hm7kJHxiAikIPs2JBn3EARULbGYUkLJQ0cpa6UXxP3GvqRw0LyaNJr24ctIp7GIR0Ey1YExR+hMMl+amlzM+t5EXQ5a7HZA0gRZd3CaJYJPsceQowAUzjuy8Q5AE5sKfE0n9E7nbTwjImLg+VgBgEms+xu+8uonY16z/eucxAcJX9189natsJvERc1rpHiq1Fn8G2D6bv7lYvn7yEBXASdqgtO/fHSdHA0l+jskI0p75HDlSXRHhtFNFkQmbes4yqoVlWfSMx0DcWyFj41vHufA1Q7KySnocbiX2nAYg2WTZs9a9XVAIVPJ0vS0Xm2n3vEVS7qGtiyRuw/mLanPXJtg1nriprHDUxpstkxIhNy3jspmxmPZ38i7el+emv/OE38TQZNyMFY/gbgk6G2DPoA+jW3fE3dE/UQd2dUBmcgmrM76VC3JBtlULsDzaxSM0ufg0CExYVf4/ZX6nCcdPEiKWm7nIGW5g94cn5+gcoJpKw8KGpAkvv4DWNm1PTXEakXwi2AYEh9SC0bexrkriXlmCndOSlVV4TzlmXuttq2XG12EKiUkwTWzHt2/nZfwAFiWqbHP0/T3UL4UkQLL+Yi+gmaOSf1VQ+/WUJHV2jwMSlEzgtXF6FdWEfVXyxwfZV9tD1EVlcymizdPUCUlWDLyfc+/p4IeuhNso0PE3j+ea/YCI0Wp9qUOnKPNQffHbUBZXrEcbzEjUmsxOr4Al5H4wJBsKaEJ8bXi+VFHI+8LUkvihH2AlKn3ZWoZ3uaMIh6SFnmI3q6mjPdTFpNgabOeypnZPwfFyvZwg7Wi/5Ra+fa92l9D8Vy5jBqemkv6/BCXoNaZomON++0mwqXhvlhpTRXP8YcBTHAjD4XwCLaRZwDLGyNmKeQg/+3GqkSe3gEzBVvGBI9HJQO1B3gJmce81zBxwhjowFoRDHfkbeNzgnYtVQYC94iLk03hAT0tYv0xSRkB2Khbhc+TrCNVmlZSNuH1NmdFgABm8ZlBpvAYL2enEbnnxXCNIesNOrySvZiMYtIuKboJeqZdDMQu+lGeeTB6fFURkeKY1yosDiP3dORpUx3VDcsIwmVCOSUAOYptXy+Uwf0KkQq+QGwcg9sm61BGNwYKbIy6ig+rnC2U2+YlcV7zegiuXxL63exK5iRId8ebG3VyN4dz7uvGeIj5Atzit5KvOaPjZrTzenri8hrcsPTYYvMM7WXh2yVvmo6aeYQIrcgaFge9ClH+35moxceUsS8bgy1oby/zVXFFGLHt17yd4b+ra+ityAZ40ABWPDLE5rdkQZ1rrVaJjs85MzgimWcUj2dN/7sK5OTCa5SYJ1gLmTuiTdlj6+GeEK+d01gAJKIl9CmROEDdmwACVKgvvpTTxP39cGzNdD04+oS38NSJUVQpHHGnIMblKhuaApPXoOuFYz/DqyPxagfpc2ZIi+AV6FQWF4LExZZZBFTZYyFi9eadMZDCUWpU+jsvvxzx5ZBk3Lvil5f6jkm0MbacqBkuqWw3+577YOKFPf9ejrR8Ua+ErV35WA8iUMtoyDWQxQA229X9LlFX7ZnpuN1modoV/wc4+iRbvm+MGh5cuL/eb5zPzjhlRfRHL3MgLPXoO/aArcqkFmoTil90qDSYusnjD7jSfWCUYTCSHgAAKWb+Q6mV93VUwYp4vcW8ND4QpZHjFsz7RjZE/55f3D6UTHE8Rr1NMGZDNjYjENobCWxRUaf/5FiY8rRf8D0GWVkZv1y71fal3RreUs6thtF/Uz5CMR/+mz41ikD9BUeTr4eOmq1hS8YwMrfr3VX3U9xYt/5fpS3Z57QAEGPzBCZiifYHMYAAg0JTR2J88gx8jZvYLYlrXEqve58CmxwhCnkSbgz1CrurRq0iQ9f8+8wgfEN0M/kNuNfhwbPMvz7mB/QPPPwJzbdZEvirPrWL0FBvi8iCWp/CdodFS3nukTuS8md2AC0SxcdiswDJHRts1s0lE9QuFhHRazh8pPwr1TItz1osPyrBkF8Xi+214VOvlpOecYNO5nfw4VPJmntD8TdmXJ5YpnlTbwhdUYnEopUcQgATWdWntKSXhQ/Kyrleor/EuCQbkRYKyj5XV8kctMI+tSvI75Qxx5nr09CDDfQN0eKwzh/p3eSqq1uysGQ0ZRFkqnFuUkeSbL0w/Tum607y2pLMhPR8mhz9QLur/l4bNUDz/f3M5ILZoVxbca3bEgyf0vY9x5X9sxv+CrjO2MejdeV55PRlYbmWp/lGYzZl6mXBq+gLtL+82sEIIkW98pQj18C1eR35owSOROfXwMFuqXvxNtBwgAkGPwBrl1XYoSfRL8eJWjg8yBFaPzWA/IOd69mFaUEuJUE6rdEikmXj9/wTEIEiMMpAhMBfy6jyZeRpBbmneGucr+wDf+nV5snVIkJsXKBkMb2tw2ujBF1C0WUgvBl7ZpaIjW1s594vPI5SReCwsttwp68SerUiDWNz87fe/rak0yyXAWNtl9VHT7dY1RHUP+Q7fO+mRzHr3zukz2quaPFu+ZeQhJV7OBM7XlwzMpz63eWmmUxxSHVI+WPy1wwKQ8c1TPTk20LEqr1Cg75ujmDoIaHCCLdJoXA5UAQRCXu4RYFGL8qi/wBIL/j/SiM50Y+uR8PprbHW0KWwuT7N0fykc9Aie/Gp+CuLsRprLXe6zqZz+PCAQLfHLrlBdvf4fRiK3SkyMBZbr4+PuqzRWPiAY1Tv6tQdQZ240jwFxSvQW7sUEXeH8b9hi49T+GGVa+eBj5X1i66bhL3D/vu2AptyL5jPdNJQZs4PsA23AZwUGiFaoveLi/fHn8HcRElTzzkSE04oSNwuZxY83Xt4EU6ug7M601bfxVwlr4h4aoXbSOLN4wcK2JoO3yF2bBMfisoWsuj8PYcExdxyl3UPYPeKgZquiGmwBLECJXNS7wrLJJ0hxKKEmZaDI/1JrvWiZefcjQykHMEJdCjKqfXmBheQkVduf4lGHkpKChDRfhP5jUIMPq45sYQh5WVwT16UAT7fpnYqKvhBhtofNfP9cP3FuViYOecGg0o/8LyDyERTMwYDPD+2Vhv08s7+epUgfs9RcuNDhf8+O3/BRSJ8dRVEvZIFWKflZfDfIQP8t9X7Oyb3ljEE2EpQv/+ZXWp7boruMolEC8h9d3QK05HdbqRKzwgs3DraHYFgwP2UigVesiX4GoRiGvpJFWAyJMLDKp/tOrtBraqvSh6XPik5LRTDI5p1/SQdnrYrBeBuJdopXl3bf/RDEKdDvB/SYH6TE04oD+2kuiTkPEwXCZ0bdY0bFmFesSQJ7qHi/oUn/+/aBqZYUtpaRU7ro+DuDl4Ld0l9UOquGiLJj7UaoGPWoDX/9NFvZ2DcZIf+EqJY+trRM5JDOdy7MemNTiH4gftXKI99+sWGozRY9Tv4hlNZajdJkoGzG8Atq4LGbIGRGQOV+sJzoNgBHGW0k7KKPXZiXyYP2/gbvcZ0dtig4hKvr/IEf1nMnHyqEB91ERV6jJ5di0YA06LxgUbx9f6vcMSfmtwlQPjc0uBcuT4QFMD4OoJdPsBCKutcugZJOSXfLmWpsYGXMmUacrwZbeXdF8/poMcsZ0q1ctNkRh0nRRNwuvLO9OKcisz8iduu12NzN3iKff3rs4eFDUqKoJ9Q1K2sdil7xpYKG7Cz7U/R/bk7/WAx5vbOCkXRnky258usuaNt1GKuxUltAM6IC8gsvKCesfW+0+nh591mGd4RGVu+v1j8fSEzNvbMztjoKH3/0ltSfP+yQKDHV2/aq74ihclwIOXbMYCmEOeVG8/zUHSGTxGQt9dJAAhTjLlPQ0+fIFb2iIoBT27Xsz/5CEPp/flAT7WQLWl4SAUommYP6AXrXOtz+bBC3HJBL3Bo/CsnY+wNkwcFP2U4dyMAqvG1dpzDL1mgYOQ14pt+5aFX1IhSDN6CWY+34dghaiHpGKAWL6uXStNrsoF53trvEb8wDgDB7nqzSDJEUItbH7ewFFXSFItlEkVfTeMBgOnHkytGTsb6enIrLmrlL+JLXAYNDT28jKfJsy/FgXJKq+Di3Akuk9UNVfn8pkQrJJGaO0xMGaFFPWP6a2dbaHVCOJsyrwJpwt9vn33p/hQkOteWA1LIGFM4uiO2PEw7c/UHZCiHvklum0zfY4OPdR64KXIVI75vVnW32uu5q10gRHa1BrQ0m0KOz7MwDNvBIoi488Fkgb9y39iNlInhfyhBuhy6ptgFC84zoIcsACE387FwWe4wtLW9PS1S0Id7KgTA0dR5+IDVFSEM/EQrxdHrGJIkNZetkUvpX8mt/eSuJmZCcU4RGV6F9Bq3Jf7k2+mar+G42mp8vVY1ze3vrZw32g2YLXEC5t6Ur6FWkgrHnNZHc1RrYw+gnk/wZi709MOPGlTOMY6dNyhD4qhew/CxhrmbgDCHy2C10hLFLX3OLgq8HeApSUeZhUfNTEjOLJlxSkn5CbBxX9EEXuRWffdqqspEBVTf8Cbh9daeNjuSDK/1zoWvudDb/S1wZiftg9Oowe07rWOXIkxzA5u7q43/kAvN2URB8MPp4RYvMdv5e4UMnJMLkBE9sHoPveI3+UDGGcVk89eyh8wcHZ/MLl/xHG4SBSQL7uRCYj+PcT9Vf+kLzRXW3+PODNUSquPiDPWREtu0SC0tViyP7vzwRrs8lK+i/nLHXwVwNvY17DY+peUVuJRI20Ct1Nm9F+xpng+jZSzZ5LO/R/WY/fcNafO3A1skPtBPJwtrRf4HBV8dhz/x87JlRpZQ6YV22CRHI198EnuSxuc/YYvSgHEFMUUeJ107mkvLloeenteEpWXF3EU3NckYGpI9tLxzH/WHsQa2I3CaHoAQHjMemqBxJI5ol/HX/vo4deDtISO9N2hn9i82dWf20VYPII5hoBOWxV345YXTdOc0nxtS/Xha5JdwDpOacGDPtk3B8cfIPxlzps4LR8LMpB6yJaxOyX2cY5AFRl2dZcRXn6z3OKZAysx3nIH+lsTrgAelKGaNFq6CjTtIoS/lKfv6ervwzEnsnwXJ1Y20y6M/HmhYIUhR3+ydC/n8lLQSusFim/SD57W7zeS+OH1IiNuZ2ItNuzBDmByYwyTXT0GY1IEdH1nff/QLDMQVdR/kqxTRjGFI9uEuZMtwXvVe5O5P+DK3ET4m9HwTt//Lh5JuTY5isCjS/+TmRD0y3RS/EpJGBBpWoWIZpPP4yJQ0XEvHAmIlT16NMWn0nksPtoJictMPnFgrrd9PRMpLaYvLHUOWFQWgG/8uSbcvztbdJXYky8HjkuTZoOETh3wXBCd0OoCfEM7ldxgXGDQVTVJdKTeOX+FssY8pk2ErHlcvKdomGdwnRPcnoO96F//k77HTUtzHt+mXPbD2+5ZDtwRKyAFFpSveRGodgcnJYJ36kpOpl72aku+if7S2KYNUpdInXarQcDCyw4etMXoMO69RqXaVCo9sOL6eJviA9ChzOayUTQPPWL3fsrPXXwcsn4Mwl0SuUH3+DNI6vWmP7XvEhb/8jG9ipeJgqePEKwOBl4svuBWtuW3+Z5vSrGsZ3qQbBaqV+QuoMU8w24PaC//iOnRgf+B0HzQ1Wd3rC2u1y8GDNcKOFOLb+8T2wuauhpaKCRsMVfnXO0Ymfx5w6JYc2O5n6MPCcBP2WGCXM+Az+3J5zP++EFJV1mkoSy7psN1H3cmRuJz8Ok1J1NwXyW0hF1WV7EyCn20OsG513qUPwEPBHPUYfb7/479DDL+PPc/VHugxKD8X8158PeqxM9FbFTdZCwux1rvDYBQW0aMmbc6v+21fTrgjF/lRvxGcvOL69gdvcG4weG2NVwlHiyKuq9f0nqfL5f03+/MYloU35YbAYcoS7QXKmL+9nHzu56jt7KKJlDldze1bDyTAKkIQe/TaepVlJziN8Pn+57VdtHeqWpvvZF6amXYxxHa1qkEht9PcG+2NULfsEQRScBv3q03ueIe9KREFyiCGZbBr0etgtcBbRD++n9bmN08d3NNFeetu/79EaSPivj3NLsOZqYvIj/gH0rNhKSEXeKK9Tcfr60/54hFKQsIe1/rrrRwZSGI8yySQotzNrA62bOSzWeOAR9BFbKysWoDHCm8v9U4M7R6n77Rt2fGGF0oFEecMf2ctLVKLAvwJb3RnS2zTbfqqQ1lOR4zvhOn9vxipshltueOrAh8XXC7LdDHsf3YUjJXjg/X/Vvtnx6qj94uIYy+sHGm0l2b77StlgAA=" width="120" height="108" alt="OlivTech logo: Smart Solutions, Real Innovations"></a>
+<nav aria-label="Sections"><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#path">Experience</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top" class="wrap">
+<div class="hero">
+<div>
+<h1>Olivier Ndihokubwayo</h1>
+<p class="role">Owner and Founder, OlivTech Innovation Ltd</p>
+<p>I am an IT professional who keeps systems running and builds the software on top of them. From repairing hardware and troubleshooting networks to developing fast, reliable web applications with JavaScript, React and Node.js, I deliver dependable solutions that businesses can count on. As founder of OlivTech Innovation Ltd, I turn technical problems into working results, and I am now expanding into embedded systems, IoT and Edge AI.</p>
+<div class="btns"><a class="btn p" href="#projects">View my projects</a><a class="btn s" href="#contact">Get in touch</a></div>
+</div>
+<div class="term" role="img" aria-label="Terminal showing a short profile of Olivier">
+<div class="bar"><i></i><i></i><i></i></div>
+<pre id="t"></pre>
+</div>
+</div>
+
+<section id="skills">
+<h2>Skills &amp; Services</h2>
+<p class="lead">Technical skills and practical services I offer, from IT support to digital solutions.</p>
+<div class="grid">
+<div class="skill"><h3>Frontend</h3><ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React.js</li><li>Tailwind CSS</li></ul></div>
+<div class="skill"><h3>Backend</h3><ul class="tags"><li>Node.js</li><li>Express.js</li><li>PHP</li></ul></div>
+<div class="skill"><h3>Data</h3><ul class="tags"><li>SQL</li><li>MySQL</li></ul></div>
+<div class="skill"><h3>Workflow</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Netlify</li></ul></div>
+<div class="skill"><h3>IT support</h3><ul class="tags"><li>Hardware repair</li><li>Troubleshooting</li><li>Windows</li><li>Software setup</li></ul></div>
+<div class="skill"><h3>Services</h3><ul class="tags"><li>Graphic design</li><li>Advertising</li><li>Software development</li><li>Mobile app development</li><li>Web app development</li><li>Computer and software maintenance</li><li>CCTV camera installation</li></ul></div>
+<div class="skill"><h3>Networks and cloud</h3><ul class="tags"><li>Network support</li><li>Internet connectivity</li><li>Online and cloud services</li></ul></div>
+<div class="skill"><h3>Languages</h3><ul class="tags"><li>English</li><li>Kinyarwanda</li></ul></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<p class="lead">Live websites I built. Each link opens the deployed site.</p>
+<div class="proj">
+<a href="https://www.dernseedcoltd.rw/" target="_blank" rel="noopener"><h3>Dernseed Co Ltd</h3><div class="u">dernseedcoltd.rw</div><p>Company website with a public-facing presence for a Rwandan business.</p></a>
+<a href="https://imara.co.rw/" target="_blank" rel="noopener"><h3>Imara</h3><div class="u">imara.co.rw</div><p>Business website running on a .rw domain.</p></a>
+<a href="https://timbercraft-rwanda.netlify.app/" target="_blank" rel="noopener"><h3>Timbercraft Rwanda</h3><div class="u">timbercraft-rwanda.netlify.app</div><p>Website for a Rwandan timber and woodcraft brand.</p></a>
+<a href="https://little-eden-school.netlify.app/" target="_blank" rel="noopener"><h3>Little Eden School</h3><div class="u">little-eden-school.netlify.app</div><p>School website that shares information with parents and the community.</p></a>
+</div>
+</section>
+
+<section id="path">
+<h2>Experience and education</h2>
+<p class="lead">My studies, work and next step, in order.</p>
+<ul class="path">
+<li><b>A2 Certificate in Software Development</b><span>College Baptiste Gacuba II TVET School, 2020 to 2023.</span></li>
+<li><b>IT Technician, CR. Aricent Technology Ltd</b><span>2023 to present. Repair and maintain computer hardware and software, support internet and network connectivity, install and configure business software, and give daily IT support to staff and clients.</span></li>
+<li><b>Information Technology, RP Tumba College</b><span>2024 to present. Rwanda Polytechnic studies in Information Technology.</span></li>
+<li><b>Web development</b><span>Delivering client websites with the JavaScript ecosystem and MySQL.</span></li>
+<li><b>Founder, OlivTech Innovation Ltd</b><span>Leading my own technology company and building digital solutions.</span></li>
+<li class="now"><b>Embedded systems, IoT and Edge AI</b></li>
+</ul>
+</section>
+
+<section id="contact">
+<div class="contact">
+<div class="contact-copy"><h2>Let’s work together</h2><p>Contact OlivTech Innovation Ltd for web projects, or reach me about internships and learning opportunities.</p>
+<div class="contact-details"><a href="tel:+250786718716">0786718716</a><span aria-hidden="true">/</span><a href="tel:+250738430618">0738430618</a><span aria-hidden="true">|</span><a href="mailto:ndiholivier2@gmail.com">ndiholivier2@gmail.com</a></div></div>
+<div class="btns"><a class="btn p" href="mailto:ndiholivier2@gmail.com"><span class="button-label">Email me</span></a><a class="btn s" href="https://www.linkedin.com/in/olivier-ndihokubwayo-a186493b7/" target="_blank" rel="noopener"><span class="button-label">LinkedIn</span></a><a class="btn wa" href="https://wa.me/250786718716" target="_blank" rel="noopener noreferrer" aria-label="Chat with me on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="currentColor" d="M16.7 14.2c-.26-.13-1.52-.75-1.76-.84-.24-.09-.41-.13-.58.13-.18.26-.67.84-.82 1.01-.15.18-.3.2-.56.07-.26-.13-1.1-.4-2.1-1.28-.78-.7-1.3-1.53-1.46-1.79-.15-.26-.02-.4.12-.53.12-.12.26-.3.4-.45.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.58-1.4-.8-1.92-.21-.5-.42-.43-.58-.44h-.5c-.18 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.94 2.55 1.07 2.72.13.18 1.84 2.8 4.46 3.93.62.27 1.11.43 1.49.55.63.2 1.2.17 1.65.1.5-.08 1.54-.63 1.76-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.17-.5-.3z"/></svg><span class="button-label">WhatsApp</span></a></div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 OlivTech Innovation Ltd. Founded by Olivier Ndihokubwayo. Rwanda.</div></footer>
+
+<script>
+(() => {
+  const copy = {
+    en: {
+      nav: ['Skills', 'Projects', 'Experience', 'Contact'],
+      hero: ['Olivier Ndihokubwayo', 'Owner and Founder, OlivTech Innovation Ltd', 'I am an IT professional who keeps systems running and builds the software on top of them. From repairing hardware and troubleshooting networks to developing fast, reliable web applications with JavaScript, React and Node.js, I deliver dependable solutions that businesses can count on. As founder of OlivTech Innovation Ltd, I turn technical problems into working results, and I am now expanding into embedded systems, IoT and Edge AI.', 'View my projects', 'Get in touch'],
+      skills: ['Skills & Services', 'Technical skills and practical services I offer, from IT support to digital solutions.'],
+      skillTitles: ['Frontend', 'Backend', 'Data', 'Workflow', 'IT support', 'Services', 'Networks and cloud', 'Languages'],
+      skillTags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'PHP', 'SQL', 'MySQL', 'Git', 'GitHub', 'Netlify', 'Hardware repair', 'Troubleshooting', 'Windows', 'Software setup', 'Graphic design', 'Advertising', 'Software development', 'Mobile app development', 'Web app development', 'Computer and software maintenance', 'CCTV camera installation', 'Network support', 'Internet connectivity', 'Online and cloud services', 'English', 'Kinyarwanda'],
+      projects: ['Projects', 'Live websites I built. Each link opens the deployed site.'],
+      projectTitles: ['Dernseed Co Ltd', 'Imara', 'Timbercraft Rwanda', 'Little Eden School'],
+      projectDescriptions: ['Company website with a public-facing presence for a Rwandan business.', 'Business website running on a .rw domain.', 'Website for a Rwandan timber and woodcraft brand.', 'School website that shares information with parents and the community.'],
+      path: ['Experience and education', 'My studies, work and next step, in order.'],
+      pathTitles: ['A2 Certificate in Software Development', 'IT Technician, CR. Aricent Technology Ltd', 'Information Technology, RP Tumba College', 'Web development', 'Founder, OlivTech Innovation Ltd', 'Embedded systems, IoT and Edge AI'],
+      pathDescriptions: ['College Baptiste Gacuba II TVET School, 2020 to 2023.', '2023 to present. Repair and maintain computer hardware and software, support internet and network connectivity, install and configure business software, and give daily IT support to staff and clients.', '2024 to present. Rwanda Polytechnic studies in Information Technology.', 'Delivering client websites with the JavaScript ecosystem and MySQL.', 'Leading my own technology company and building digital solutions.'],
+      contact: ['Let’s work together', 'Contact OlivTech Innovation Ltd for web projects, or reach me about internships and learning opportunities.', 'Email me', 'LinkedIn', 'WhatsApp'],
+      footer: '© 2026 OlivTech Innovation Ltd. Founded by Olivier Ndihokubwayo. Rwanda.',
+      languageLabel: 'Language', darkLabel: 'Dark mode', lightLabel: 'Light mode', terminalLabel: 'Terminal profile for Olivier Ndihokubwayo'
+    },
+    rw: {
+      nav: ['Ubumenyi', 'Imishinga', 'Uburambe', 'Twandikire'],
+      hero: ['Olivier Ndihokubwayo', 'Nyiri kandi washinze OlivTech Innovation Ltd', 'Ndi inzobere mu ikoranabuhanga rya mudasobwa (IT), nkora ku buryo sisitemu zikomeza gukora kandi ngateza imbere porogaramu zizikorerwaho. Nkora isanwa ry’ibikoresho, nkemura ibibazo by’imiyoboro, kandi nkubaka porogaramu za web zikora neza nkoresheje JavaScript, React na Node.js. Nshingiye OlivTech Innovation Ltd, mfashe ibibazo by’ikoranabuhanga kubihindura ibisubizo bifatika. Ubu ndimo kwagura ubumenyi mu bikoresho bikoresha porogaramu (embedded systems), IoT na Edge AI.', 'Reba imishinga yanjye', 'Twandikire'],
+      skills: ['Ubumenyi na Serivisi', 'Ubumenyi bwa tekiniki na serivisi ntanga, kuva ku bufasha bwa IT kugeza ku bisubizo by’ikoranabuhanga.'],
+      skillTitles: ['Frontend (igice kigaragarira umukoresha)', 'Backend (igice gikora inyuma)', 'Ububiko bw’amakuru', 'Uburyo bw’akazi', 'Ubufasha bwa IT', 'Serivisi ntanga', 'Imiyoboro na cloud', 'Indimi'],
+      skillTags: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'PHP', 'SQL', 'MySQL', 'Git', 'GitHub', 'Netlify', 'Gusana ibikoresho', 'Gukemura ibibazo bya tekiniki', 'Windows', 'Gushyiraho porogaramu', 'Gukora ibishushanyo mbonera', 'Kwamamaza', 'Guteza imbere porogaramu', 'Gukora porogaramu za telefoni', 'Gukora porogaramu za web', 'Kubungabunga mudasobwa na porogaramu', 'Gushyiraho kamera za CCTV', 'Ubufasha ku miyoboro', 'Imikorere ya interineti', 'Serivisi zo kuri interineti na cloud', 'Icyongereza', 'Ikinyarwanda'],
+      projects: ['Imishinga', 'Imbuga nakoze kandi ziri kuri interineti. Kanda ku murongo ufungure urubuga.'],
+      projectTitles: ['Dernseed Co Ltd', 'Imara', 'Timbercraft Rwanda', 'Little Eden School'],
+      projectDescriptions: ['Urubuga rw’ikigo rwerekana serivisi n’amakuru y’ubucuruzi bwo mu Rwanda.', 'Urubuga rw’ubucuruzi ruri kuri domeni ya .rw.', 'Urubuga rw’ikigo cyo mu Rwanda gikora ibijyanye n’ibiti n’ubukorikori bwabyo.', 'Urubuga rw’ishuri rutanga amakuru ku babyeyi no ku muryango mugari.'],
+      path: ['Uburambe n’amashuri', 'Amasomo, akazi n’intambwe ikurikira mu rugendo rwanjye.'],
+      pathTitles: ['Impamyabumenyi A2 mu Iterambere rya Porogaramu', 'Umutekinisiye wa IT, CR. Aricent Technology Ltd', 'Ikoranabuhanga rya Mudasobwa, RP Tumba College', 'Iterambere rya porogaramu za web', 'Nyiri kandi washinze OlivTech Innovation Ltd', 'Embedded systems, IoT na Edge AI'],
+      pathDescriptions: ['College Baptiste Gacuba II TVET School, kuva 2020 kugeza 2023.', 'Kuva mu 2023 kugeza ubu. Gusanira no kwita ku bikoresho na porogaramu za mudasobwa, gufasha mu mikorere ya interineti n’imiyoboro, gushyiraho no guhindura porogaramu z’akazi, no gufasha abakozi n’abakiriya buri munsi mu bijyanye na IT.', 'Kuva mu 2024 kugeza ubu. Kwiga ikoranabuhanga rya mudasobwa muri Rwanda Polytechnic.', 'Kubaka imbuga z’abakiriya hakoreshejwe ikoranabuhanga rya JavaScript na MySQL.', 'Kuyobora ikigo cyanjye cy’ikoranabuhanga no kubaka ibisubizo bikoresha ikoranabuhanga.'],
+      contact: ['Dukorane', 'Vugana na OlivTech Innovation Ltd ku mishinga ya web, cyangwa unyandikire ku mahirwe yo kwimenyereza umwuga no kwiga.', 'Nyandikira kuri imeri', 'LinkedIn', 'Twandikire kuri WhatsApp'],
+      footer: '© 2026 OlivTech Innovation Ltd. Yashinzwe na Olivier Ndihokubwayo. Rwanda.',
+      languageLabel: 'Ururimi', darkLabel: 'Uburyo bwijimye', lightLabel: 'Uburyo bw’umucyo', terminalLabel: 'Umwirondoro wa Olivier Ndihokubwayo muri terminal'
+    }
+  };
+
+  const put = (selector, values) => document.querySelectorAll(selector).forEach((node, index) => {
+    if (values[index] !== undefined) node.textContent = values[index];
+  });
+  const terminal = {
+    en: ['<span class="c">$</span> whoami', 'olivier-ndihokubwayo', '', '<span class="c">$</span> cat profile.json', '{', '  <span class="k">"role"</span>: <span class="s">"IT Technician / Developer"</span>,', '  <span class="k">"stack"</span>: [<span class="s">"React"</span>, <span class="s">"Node.js"</span>, <span class="s">"MySQL"</span>],', '  <span class="k">"founder_of"</span>: <span class="s">"OlivTech Innovation Ltd"</span>,', '  <span class="k">"location"</span>: <span class="s">"Rwanda"</span>,', '  <span class="k">"learning"</span>: [<span class="s">"Embedded"</span>, <span class="s">"IoT"</span>, <span class="s">"Edge AI"</span>],', '  <span class="k">"status"</span>: <span class="s">"open to opportunities"</span>', '}', '', '<span class="c">$</span> <span class="cur"></span>'],
+    rw: ['<span class="c">$</span> ndi nde?', 'olivier-ndihokubwayo', '', '<span class="c">$</span> reba umwirondoro.json', '{', '  <span class="k">"akazi"</span>: <span class="s">"Umutekinisiye wa IT / Umutezimbere"</span>,', '  <span class="k">"ikoranabuhanga"</span>: [<span class="s">"React"</span>, <span class="s">"Node.js"</span>, <span class="s">"MySQL"</span>],', '  <span class="k">"ikigo_nashinze"</span>: <span class="s">"OlivTech Innovation Ltd"</span>,', '  <span class="k">"igihugu"</span>: <span class="s">"Rwanda"</span>,', '  <span class="k">"ndiga"</span>: [<span class="s">"Embedded systems"</span>, <span class="s">"IoT"</span>, <span class="s">"Edge AI"</span>],', '  <span class="k">"amahirwe"</span>: <span class="s">"Niteguye amahirwe mashya"</span>', '}', '', '<span class="c">$</span> <span class="cur"></span>']
+  };
+
+  const nav = document.querySelector('nav[aria-label="Sections"]');
+  const controls = document.createElement('span');
+  controls.className = 'site-controls';
+  const language = document.createElement('select');
+  language.id = 'language-switch';
+  language.setAttribute('aria-label', 'Language');
+  language.innerHTML = '<option value="en">English</option><option value="rw">Kinyarwanda</option>';
+  const themeButton = document.createElement('button');
+  themeButton.id = 'theme-toggle';
+  themeButton.type = 'button';
+  themeButton.setAttribute('aria-pressed', 'false');
+  themeButton.innerHTML = '<span aria-hidden="true">◐</span> <span class="theme-label">Dark mode</span>';
+  controls.append(language, themeButton);
+  nav.append(controls);
+
+  let currentLanguage = 'en';
+  let currentTheme = 'light';
+  try {
+    currentLanguage = localStorage.getItem('portfolio-language') === 'rw' ? 'rw' : 'en';
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    currentTheme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  } catch (_) {
+    currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function setLanguage(lang) {
+    currentLanguage = lang === 'rw' ? 'rw' : 'en';
+    const text = copy[currentLanguage];
+    document.documentElement.lang = currentLanguage;
+    document.title = currentLanguage === 'rw' ? 'Olivier Ndihokubwayo | Uwashinze OlivTech Innovation Ltd' : 'Olivier Ndihokubwayo | Founder of OlivTech Innovation Ltd';
+    language.value = currentLanguage;
+    language.setAttribute('aria-label', text.languageLabel);
+    nav.setAttribute('aria-label', currentLanguage === 'rw' ? 'Ibice by’urubuga' : 'Sections');
+    put('nav > a', text.nav);
+    put('#top h1', [text.hero[0]]);
+    put('#top .role', [text.hero[1]]);
+    put('#top .hero > div:first-child > p:not(.role)', [text.hero[2]]);
+    put('#top .hero > div:first-child .btns a', text.hero.slice(3));
+    put('#skills h2', [text.skills[0]]);
+    document.querySelector('#skills .lead').textContent = text.skills[1];
+    put('.skill h3', text.skillTitles);
+    put('.skill .tags li', text.skillTags);
+    put('#projects h2', [text.projects[0]]);
+    put('#projects .lead', [text.projects[1]]);
+    put('.proj h3', text.projectTitles);
+    put('.proj p', text.projectDescriptions);
+    put('#path h2', [text.path[0]]);
+    put('#path .lead', [text.path[1]]);
+    put('#path .path b', text.pathTitles);
+    put('#path .path span', text.pathDescriptions);
+    put('.contact h2', [text.contact[0]]);
+    put('.contact p', [text.contact[1]]);
+    put('.contact .btns a .button-label', text.contact.slice(2));
+    document.querySelector('.btn.wa').setAttribute('aria-label', currentLanguage === 'rw' ? 'Twandikire kuri WhatsApp' : 'Chat with me on WhatsApp');
+    put('footer .wrap', [text.footer]);
+    document.querySelector('.term').setAttribute('aria-label', text.terminalLabel);
+    document.querySelector('#t').innerHTML = terminal[currentLanguage].join('\n');
+    document.querySelector('.theme-label').textContent = currentTheme === 'dark' ? text.lightLabel : text.darkLabel;
+  }
+
+  function setTheme(theme, persist = true) {
+    currentTheme = theme === 'dark' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = currentTheme;
+    document.documentElement.style.colorScheme = currentTheme;
+    themeButton.setAttribute('aria-pressed', String(currentTheme === 'dark'));
+    themeButton.setAttribute('aria-label', currentTheme === 'dark' ? copy[currentLanguage].lightLabel : copy[currentLanguage].darkLabel);
+    themeButton.querySelector('.theme-label').textContent = currentTheme === 'dark' ? copy[currentLanguage].lightLabel : copy[currentLanguage].darkLabel;
+    themeButton.querySelector('[aria-hidden="true"]').textContent = currentTheme === 'dark' ? '☀' : '◐';
+    if (persist) {
+      try { localStorage.setItem('portfolio-theme', currentTheme); } catch (_) {}
+    }
+  }
+
+  language.addEventListener('change', () => {
+    setLanguage(language.value);
+    try { localStorage.setItem('portfolio-language', currentLanguage); } catch (_) {}
+  });
+  themeButton.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+  setLanguage(currentLanguage);
+  setTheme(currentTheme, false);
+})();
+</script>
+</body>
+</html>
